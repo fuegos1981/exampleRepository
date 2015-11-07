@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-   <title>Тест</title>
- <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		 <title>Тест</title>
+		 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		 <link rel="stylesheet" href="style.css" />
    </head>
    <body>
 		<header>
 			<img src="webLogo.png" alt="Логтип W3C" width="150" height="80"  />
 			<h1>Основы Web-технологий</h1>
 			<nav>
-				<ul>
+				<ul  class =mainUl>
 				   <li><a href ="Index.html">Главная</a></li>
-				   <li><a href ="Web.html">Web-технологии</a>
-					   <ul>
+				   <li  class="menu"><a href ="Web.html">Web-технологии</a>
+					   <ul class ="submenu">
 						   <li><a href ="html5.html">HTML5</a></li>
 						   <li><a href ="CSS3.html">CSS3</a></li>
 						   <li><a href ="JavaScript.html">JavaScript</a></li>
@@ -23,34 +24,36 @@
 				</ul>
 			</nav>
 		</header>
-		<form name="Test">
-			<p>Какой тег предназначен для создания ссылок:<br />
-				<input type="radio" name="r1" value="r11" />&lt; a &gt; <br />
-				<input type="radio" name="r1" value="r12" />&lt; a / &gt; <br />
-				<input type="radio" name="r1" value="r13" />&lt; ref &gt; <br />
-				<input type="radio" name="r1" value="r14" />&lt; ref / &gt; </p>
-			<p>Какой тег предназначен для создания нумерованного списка:<br />
-				<input type="radio" name="r2" value="r21" />&lt; li &gt; <br />
-				<input type="radio" name="r2" value="r22" />&lt; dl &gt; <br />
-				<input type="radio" name="r2" value="r23" />&lt; ol &gt; <br />
-				<input type="radio" name="r2" value="r24" />&lt; ul &gt; </p>
-			<p>Какой тег предназначен для передачи служебной информации браузеру:<br />
-				<input type="radio" name="r3" value="r31" />&lt; info &gt; <br />
-				<input type="radio" name="r3" value="r32" />&lt; info / &gt; <br />
-				<input type="radio" name="r3" value="r33" />&lt; meta &gt; <br />
-				<input type="radio" name="r3" value="r34" />&lt; meta / &gt; </p>
-			<p>Какие теги используются при создании таблицы:<br />
-				<input type="checkbox" name="p4" value="p41" />&lt; bodyt &gt; <br />
-				<input type="checkbox" name="p4" value="p42" />&lt; td &gt; <br />
-				<input type="checkbox" name="p4" value="p43" />&lt; groupcol &gt; <br />
-				<input type="checkbox" name="p4" value="p44" />&lt; col / &gt; </p>
-			<p>Какие атрибуты используются при создании форм:<br />
-				<input type="checkbox" name="p5" value="p51" />autocomplete<br />
-				<input type="checkbox" name="p5" value="p52" />action<br />
-				<input type="checkbox" name="p5" value="p53" />charset<br />
-				<input type="checkbox" name="p5" value="p54" />validate</p>
-			<p>	<input type="button" name="Rez" value="Результат" /></p>
-		</form>	
+		<div class = "standartText">
+			<form name="Test">
+				<p>Какой тег предназначен для создания ссылок:<br />
+					<input type="radio" name="r1" value="r11" />&lt; a &gt; <br />
+					<input type="radio" name="r1" value="r12" />&lt; a / &gt; <br />
+					<input type="radio" name="r1" value="r13" />&lt; ref &gt; <br />
+					<input type="radio" name="r1" value="r14" />&lt; ref / &gt; </p>
+				<p>Какой тег предназначен для создания нумерованного списка:<br />
+					<input type="radio" name="r2" value="r21" />&lt; li &gt; <br />
+					<input type="radio" name="r2" value="r22" />&lt; dl &gt; <br />
+					<input type="radio" name="r2" value="r23" />&lt; ol &gt; <br />
+					<input type="radio" name="r2" value="r24" />&lt; ul &gt; </p>
+				<p>Какой тег предназначен для передачи служебной информации браузеру:<br />
+					<input type="radio" name="r3" value="r31" />&lt; info &gt; <br />
+					<input type="radio" name="r3" value="r32" />&lt; info / &gt; <br />
+					<input type="radio" name="r3" value="r33" />&lt; meta &gt; <br />
+					<input type="radio" name="r3" value="r34" />&lt; meta / &gt; </p>
+				<p>Какие теги используются при создании таблицы:<br />
+					<input type="checkbox" name="p4" value="p41" />&lt; bodyt &gt; <br />
+					<input type="checkbox" name="p4" value="p42" />&lt; td &gt; <br />
+					<input type="checkbox" name="p4" value="p43" />&lt; groupcol &gt; <br />
+					<input type="checkbox" name="p4" value="p44" />&lt; col / &gt; </p>
+				<p>Какие атрибуты используются при создании форм:<br />
+					<input type="checkbox" name="p5" value="p51" />autocomplete<br />
+					<input type="checkbox" name="p5" value="p52" />action<br />
+					<input type="checkbox" name="p5" value="p53" />charset<br />
+					<input type="checkbox" name="p5" value="p54" />validate</p>
+				<p>	<input type="button" name="Rez" value="Результат" /></p>
+			</form>	
+		</div>
 		<footer>
 			<address>
 				<a href="mailto:mail@mail">Пишите mail@mail</a><br />

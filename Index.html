@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-   <title>Главная</title>
- <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Главная</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="style.css" />
    </head>
    <body>
 		<header>
 			<img src="webLogo.png" alt="Логтип W3C" width="150" height="80"  />
 			<h1>Основы Web-технологий</h1>
 			<nav>
-				<ul>
+				<ul  class =mainUl>
 				   <li><a href ="Index.html">Главная</a></li>
-				   <li><a href ="Web.html">Web-технологии</a>
-					   <ul>
+				   <li  class="menu"><a href ="Web.html">Web-технологии</a>
+					   <ul class ="submenu">
 						   <li><a href ="html5.html">HTML5</a></li>
 						   <li><a href ="CSS3.html">CSS3</a></li>
 						   <li><a href ="JavaScript.html">JavaScript</a></li>
@@ -23,7 +24,7 @@
 				</ul>
 			</nav>
 		</header>
-			<div>
+			<div class = "standartText">
 				<p> Курс предназначен для <i>широкого</i> круга слушателей, которые хотели бы освоить такие <i>Web-технологии</i> как <abbr title="HyperText Markup Language"><b>HTML5</b></abbr>, <abbr title="Cascading Style Sheets"><b>CSS3</b></abbr>, <b>JavaScript</b>, но не имеют предварительных профильных знаний в этой области. <i>Предварительные знания/навыки:</i> уверенное пользование ПК и программным обеспечением. Практическая работа будет проводится с использованием текстового редактора Notepad++.</p>	
 			</div>
 		<footer>

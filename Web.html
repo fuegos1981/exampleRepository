@@ -3,16 +3,17 @@
    <head>
 	   <title>Web-технологии</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="style.css" />
    </head>
    <body>
 		<header>
 			<img src="webLogo.png" alt="Логтип W3C" width="150" height="80"  />
 			<h1>Основы Web-технологий</h1>
 			<nav>
-				<ul>
+				<ul  class =mainUl>
 				   <li><a href ="Index.html">Главная</a></li>
-				   <li><a href ="Web.html">Web-технологии</a>
-					   <ul>
+				   <li  class="menu"><a href ="Web.html">Web-технологии</a>
+					   <ul class ="submenu">
 						   <li><a href ="html5.html">HTML5</a></li>
 						   <li><a href ="CSS3.html">CSS3</a></li>
 						   <li><a href ="JavaScript.html">JavaScript</a></li>
@@ -23,29 +24,31 @@
 				</ul>
 			</nav>
 		</header>
-			<p>Web-технологии можно условно разделить на две пересекающиеся группы: <i>клиентские</i> и <i>серверные</i></p>
-			<ul>
-				<li><p>Клиентские:</p>
-					<dl>
-						<dt><b>HTML</b></dt>
-						<dd>стандартный язык разметки Web-страниц</dd>
-						<dt><b>CSS</b></dt>
-						<dd>средство описания и оформления внешнего вида Web-страниц</dd>
-						<dt><b>JavaScript</b></dt>
-						<dd>применяется в браузерах как язык сценариев для придания интерактивности Web-страницам</dd>
-					</dl>
-				</li>
-				<li><p>Серверные:</p>
-					<dl>
-						<dt><b>ASP.NET (C#)</b></dt>
-						<dd>технология создания Web-приложений от компании Microsoft</dd>
-						<dt><b>JSP (Java)</b></dt>
-						<dd>технология создания Web-приложений от компании Oracle</dd>
-						<dt><b>PHP</b></dt>
-						<dd>язык программирования, интенсивно применяемый для разработки Web-приложений</dd>
-					</dl>
-				</li>
-			</ul>
+			<div class = "standartText">
+				<p>Web-технологии можно условно разделить на две пересекающиеся группы: <i>клиентские</i> и <i>серверные</i></p>
+				<ul id = "webUl">
+					<li><p>Клиентские:</p>
+						<dl>
+							<dt><b>HTML</b></dt>
+							<dd>стандартный язык разметки Web-страниц</dd>
+							<dt><b>CSS</b></dt>
+							<dd>средство описания и оформления внешнего вида Web-страниц</dd>
+							<dt><b>JavaScript</b></dt>
+							<dd>применяется в браузерах как язык сценариев для придания интерактивности Web-страницам</dd>
+						</dl>
+					</li>
+					<li><p>Серверные:</p>
+						<dl>
+							<dt><b>ASP.NET (C#)</b></dt>
+							<dd>технология создания Web-приложений от компании Microsoft</dd>
+							<dt><b>JSP (Java)</b></dt>
+							<dd>технология создания Web-приложений от компании Oracle</dd>
+							<dt><b>PHP</b></dt>
+							<dd>язык программирования, интенсивно применяемый для разработки Web-приложений</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
 		<footer>
 			<address>
 				<a href="mailto:mail@mail">Пишите mail@mail</a><br />
