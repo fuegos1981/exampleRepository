@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="style.css" />
    </head>
    <body>
+   <script src ="Calculator.js"></script>
 		<header>
 			<img src="webLogo.png" alt="Логтип W3C" width="150" height="80"  />
 			<h1>Основы Web-технологий</h1>
@@ -31,30 +32,30 @@
 					  <td colspan="5" id="btText"><input type="text" name="inp" id ="textInput" /></td>
 				   </tr>
 				   <tr>
-					  <td><input type="button" name="bt7" value="7" /></td>
-					  <td><input type="button" name="bt8" value="8" /></td>
-					  <td><input type="button" name="bt9" value="9" /></td>
-					  <td><input type="button" name="btDiv" value="/" /></td>
-					  <td><input type="button" name="btC" value="C" /></td>
+					  <td><input type="button" name="bt7" value="7" onclick="clickBtn('7')" /></td>
+					  <td><input type="button" name="bt8" value="8" onclick="clickBtn('8')" /></td>
+					  <td><input type="button" name="bt9" value="9" onclick="clickBtn('9')" /></td>
+					  <td><input type="button" name="btDiv" value="/" onclick="clickBtn('/')" /></td>
+					  <td><input type="button" name="btC" value="C" onclick="clickBtn('C')" /></td>
 				   </tr>
 				   <tr>
-					  <td><input type="button" name="bt4" value="4" /></td>
-					  <td><input type="button" name="bt5" value="5" /></td>
-					  <td><input type="button" name="bt6" value="6" /></td>
-					  <td><input type="button" name="btMult" value="*" /></td>
-					  <td><input type="button" name="btZn" value="&#177;" /></td>
+					  <td><input type="button" name="bt4" value="4" onclick="clickBtn('4')" /></td>
+					  <td><input type="button" name="bt5" value="5" onclick="clickBtn('5')" /></td>
+					  <td><input type="button" name="bt6" value="6" onclick="clickBtn('6')" /></td>
+					  <td><input type="button" name="btMult" value="*" onclick="clickBtn('*')" /></td>
+					  <td><input type="button" name="btZn" value="&#177;"  onclick="clickBtn('znak')" /></td>
 				   </tr>
 				   <tr>
-					  <td><input type="button" name="bt1" value="1" /></td>
-					  <td><input type="button" name="bt2" value="2" /></td>
-					  <td><input type="button" name="bt3" value="3" /></td>
-					  <td><input type="button" name="btMinus" value="-" /></td>
-					  <td rowspan="2"><input type="button" name="btN" value="=" id ="btnEqual" /></td>
+					  <td><input type="button" name="bt1" value="1" onclick="clickBtn('1')" /></td>
+					  <td><input type="button" name="bt2" value="2" onclick="clickBtn('2')" /></td>
+					  <td><input type="button" name="bt3" value="3" onclick="clickBtn('3')" /></td>
+					  <td><input type="button" name="btMinus" value="-" onclick="clickBtn('-')" /></td>
+					  <td rowspan="2"><input type="button" name="btN" value="=" id ="btnEqual" onclick="clickBtn('Equal')" /></td>
 				   </tr>
 				   <tr>
-					  <td colspan="2"><input type="button" name="bt0" value="0" /></td>
-					  <td><input type="button" name="btP" value="." /></td>
-					  <td><input type="button" name="btAdd" value="+" /></td>
+					  <td colspan="2"><input type="button" name="bt0" value="0" onclick="clickBtn('0')" /></td>
+					  <td><input type="button" name="btP" value="." onclick="clickBtn('.')" /></td>
+					  <td><input type="button" name="btAdd" value="+" onclick="clickBtn('+')" /></td>
 				   </tr>
 				</table>
 			</form>
