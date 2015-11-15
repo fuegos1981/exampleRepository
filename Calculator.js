@@ -7,36 +7,46 @@ var textRes = "";
 
 function clickBtn(el){
 	var textEdit =document.getElementById("textInput");
+	var resComent = document.getElementById("result");
 	if (findElInMas(el)){
 		if (secondElement==""&&operation==""){
-			firstElement = firstElement+el;}
-		else {secondElement=secondElement+el;}
+			firstElement = firstElement+el;
+			textEdit.setAttribute("value",firstElement);
+			}
+		else {secondElement=secondElement+el;
+			textEdit.setAttribute("value",secondElement);
+		}
 		textRes = textRes+el;
-		textEdit.setAttribute("value",textRes);
+		
+		resComent.innerHTML =textRes;
+		
 	}
 	else if (el =='C') {
 		firstElement ="";
 		secondElement="";
 		operation="";
 		textRes = "";
+		resComent.innerHTML = "";
 		textEdit.setAttribute("value",textRes);
 	}
 	else if (el =='znak') {
 		if (secondElement==""&&operation==""){
 			firstElement = -+firstElement;
 			textRes = firstElement;
+			textEdit.setAttribute("value",textRes);
 			}
 		else if (secondElement!=0) {secondElement=-+secondElement;
 			textRes = firstElement+el+ secondElement;
+			textEdit.setAttribute("value",secondElement);
 		}
+		resComent.innerHTML = textRes;
 		
-		textEdit.setAttribute("value",textRes);
 	}
 	else if (el !='Equal') {
 		operation= el;
 		textRes = textRes+operation;
-		textEdit.setAttribute("value",textRes);
-		
+		//textEdit.setAttribute("value",textRes);
+		resComent.innerHTML = textRes;
 	}
 	else {
 		mistake=false;
@@ -64,8 +74,9 @@ function clickBtn(el){
 		
 		secondElement="";
 		operation="";
-		textRes =result;
-		textEdit.setAttribute("value",textRes);
+		textRes =textRes+"="+ result;
+		resComent.innerHTML =textRes;
+		textEdit.setAttribute("value",result);
 		if (mistake){
 			firstElement ="";
 			textRes ="";
