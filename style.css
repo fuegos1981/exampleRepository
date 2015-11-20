@@ -133,9 +133,11 @@ display: none;
 .menu:hover .submenu{
 	display: block;
 	position: absolute;
+	top: 45px;
+	left: 303px;
 	border: 1px solid black;
 	background-color: white;
-	margin-left: 303px;
+	//margin-left: 303px;
 	border-radius: 8px;
 	text-align: left;
 	padding: 5px;
