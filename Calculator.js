@@ -42,7 +42,7 @@ function clickBtn(el){
 		resComent.innerHTML = textRes;
 		
 	}
-	else if (el !='Equal') {
+	else if (el !='Equal' && operation=="") {
 		operation= el;
 		textRes = textRes+operation;
 		//textEdit.setAttribute("value",textRes);
@@ -73,16 +73,30 @@ function clickBtn(el){
 		//alert("firstElement"+firstElement+"; secondElement "+secondElement+"operation "+operation);
 		
 		secondElement="";
-		operation="";
-		textRes =textRes+"="+ result;
-		resComent.innerHTML =textRes;
+
+		
 		textEdit.setAttribute("value",result);
 		if (mistake){
 			firstElement ="";
 			textRes ="";
 		}
 		else {firstElement =result;}
+		
+		if (el=='Equal'){
+			operation="";
+			textRes =textRes+"="+ result;
+			resComent.innerHTML =textRes;
+			
 		}
+		else {
+			operation=el;
+			textRes =textRes+el;
+			resComent.innerHTML =textRes;
+		}	
+		
+	}
+		
+		
 
 }
 
