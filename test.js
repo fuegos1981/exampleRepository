@@ -8,7 +8,6 @@ function clickRes(){
 	//var fourth = document.getElementsByName("p4");
 	//var fifth = document.getElementsByName("p5");
 	var sum=0;
-	var masCheck = $(":Checkbox");
 	//sum =CheckAnswer(first, sum,true);
 	//sum =CheckAnswer(second, sum,true);
 	sum = CheckAnswer(masRadio, sum,true);
@@ -36,7 +35,7 @@ function CheckAnswer(mas, sum, thisRadio){
 	var addBall = 0;
 	for (var i = 0; i < mas.length; i++) {
 		//alert(mas[i].getAttribute("value")+ mas[i].checked);
-		if (mas[i].checked==true && findElInMas(mas[i].getAttribute("value"))){
+		if (mas.eq(i).prop("checked") && findElInMas(mas.eq(i).val())){
 			if (thisRadio == true){
 				addBall = addBall+1;
 				//alert(addBall);
@@ -46,7 +45,7 @@ function CheckAnswer(mas, sum, thisRadio){
 			}
 		}
 		else {
-			if (thisRadio == false&&mas[i].checked==true){
+			if (thisRadio == false&&mas.eq(i).prop("checked")){
 			minusBall = minusBall+0.5;
 			//alert(minusBall+mas[i].getAttribute("value"));
 			}

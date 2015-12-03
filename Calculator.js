@@ -10,7 +10,7 @@ $(":button").bind("click", function() {
 		clickBtn("znak");
 	}
 	else	
-		{clickBtn(this.value);}
+		{clickBtn($(this).val());}
 	
   //alert(this.value);
 });
@@ -25,10 +25,10 @@ function clickBtn(el,btn){
 	if (findElInMas(el)){
 		if (secondElement==""&&operation==""){
 			firstElement = firstElement+el;
-			textEdit.attr("value",firstElement);//.setAttribute("value",firstElement);
+			textEdit.val(firstElement);//.setAttribute("value",firstElement);
 			}
 		else {secondElement=secondElement+el;
-			textEdit.attr("value",secondElement);//setAttribute("value",secondElement);
+			textEdit.val(secondElement);//setAttribute("value",secondElement);
 		}
 		textRes = textRes+el;
 		
@@ -41,17 +41,17 @@ function clickBtn(el,btn){
 		operation="";
 		textRes = "";
 		resComent.html("");//.innerHTML = "";
-		textEdit.attr("value",textRes);//setAttribute("value",textRes);
+		textEdit.val(textRes);//setAttribute("value",textRes);
 	}
 	else if (el =="znak") {
 		if (secondElement==""&&operation==""){
 			firstElement = -+firstElement;
 			textRes = firstElement;
-			textEdit.attr("value",textRes);//.setAttribute("value",textRes);
+			textEdit.val(textRes);//.setAttribute("value",textRes);
 			}
 		else if (secondElement!=0) {secondElement=-+secondElement;
 			textRes = firstElement+el+ secondElement;
-			textEdit.attr("value",secondElement);//.setAttribute("value",secondElement);
+			textEdit.val(secondElement);//.setAttribute("value",secondElement);
 		}
 		resComent.html(textRes);//.innerHTML = textRes;
 		
@@ -89,7 +89,7 @@ function clickBtn(el,btn){
 		secondElement="";
 
 		
-		textEdit.attr("value",result);//.setAttribute("value",result);
+		textEdit.val(result);//.setAttribute("value",result);
 		if (mistake){
 			firstElement ="";
 			textRes ="";
