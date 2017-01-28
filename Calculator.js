@@ -82,7 +82,7 @@ function clickBtn(el,btn){
 				break;
 			default:
 				result =+firstElement*+secondElement;
-				break;
+				break;    
 		}
 		//alert("firstElement"+firstElement+"; secondElement "+secondElement+"operation "+operation);
 		
